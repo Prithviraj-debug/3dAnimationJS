@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  cursor: none;
+}
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  transform-style: preserve-3d;
+  min-height: 80vh;
+  width: 32rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  background: #d3d3d3;
+}
+
+.gamepad {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gamepad img {
+  width: 20rem;
+  transition: all 0.75s ease-out;
+  z-index: 2;
+}
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background: linear-gradient(
+    to right,
+    rgba(116, 116, 116, 0.5),
+    rgba(23, 241, 78, 0.75)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info h1 {
+  font-size: 3rem;
+  transition: all 0.75s ease-out;
+}
+.info h3 {
+  font-size: 1.3rem;
+  padding-top: 2rem;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+
+.purchase {
+  margin-top: 5rem;
+}
+.purchase button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: #316b3f;
+  border: none;
+  color: white;
+  cursor: none;
+  border-radius: 30px;
+  font-weight: bolder;
+  transition: all 0.75s ease-out;
+}
+
+/* CSS style to hide cursor element */
+.newClass {
+  cursor: none;
+}
